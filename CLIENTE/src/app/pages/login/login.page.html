@@ -1,0 +1,48 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Login
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <ion-item>
+      <ion-label  position="floating">Nombre de usuario o email</ion-label>
+      <ion-input type="text" name="username" [(ngModel)]="user.username" autocomplete="off"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input  type="password" name="password" [(ngModel)]="user.password"></ion-input>
+    </ion-item>
+    <ion-button expand="block" fill="outline" (click)="login()">Inicio de sesión</ion-button>
+  </div>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-button expand="full" (click)="signupPage()">Registrar</ion-button>
+  </ion-toolbar>
+</ion-footer>
+
+<!-- <ion-content class="background">
+  <form class="mt-5" action="">
+    <p class="text-center mt-5 titulo">One<strong>God</strong></p>
+    <p class="text-center mt-5 mb-5 txt"><strong>SIGN IN </strong>NOW</p>
+    <input class="mb-3" type="text" id="" placeholder="E-mail" name="usuario" [(ngModel)]="user.username" autocomplete="off">
+    <input type="password" id="" placeholder="Password" name="password" [(ngModel)]="user.password">
+    <button class="mt-4 text-white" (click)="login()"><strong>SIGN IN</strong></button>
+    <div class="row mt-4">
+      <div class="col text-start">
+        <p class="txt"><strong>Forgot</strong></p>
+      </div>
+      <div class="col-5">
+      </div>
+      <div class="col text-end"(click)="signupPage()">
+        <p class="txt"><strong>Register</strong></p>
+      </div>
+    </div>
+   
+  </form>
+</ion-content> -->

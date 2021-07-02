@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SCOP</title>
+  <!--  <link rel="stylesheet" href="http://localhost:3000/style.css"> -->
+   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+
+   <%- include('./partials/head.ejs')-%>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="height: 5rem;">
+        <a class="navbar-brand" href="#">SCOP</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link mt-1" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mt-1" href="#about">Acerca de nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mt-1" href="#services">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mt-1" href="#time-visit">Hora de visitas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mt-1" href="#contact">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link h5" href="/login"> 
+                        <form class="form-inline">
+                            <button class="btn btn-outline-info" type="button">Iniciar sesión</button>
+                        </form>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--  presentacion  -->
+    <div style="margin:0; padding: 0; width: 100%; height: 41rem">
+        <img src="http://localhost:3000/Modo-de-vida-cangrejo-azul.jpg" alt="" style="margin:0; padding: 0; width: 100%; height: 41rem; filter: contrast(100%);">  
+        <div class="container" style="position: absolute; top: 20%; left: 5%; background: white; opacity:.6; width: 45%; height: 33rem; ">
+            <br>
+            <div class="pt-5 text-center">
+                <p class="display-3">Promarca te</p>
+                <p class="display-3">da la</p>
+                <p class="display-3">bienvenida</p>
+                <p class="pt-3">Comprometidos con la excelencia</p>
+            </div>
+        </div>
+    </div>
+       
+        <!--  sobre nosotros  -->
+    <div id="about" style="margin: 0; padding: 0; width: 100%; height: 48rem;">
+        <div class=" row p-5">
+            <div class="col-6">
+                <img src="http://localhost:3000/Modo-de-vida-cangrejo-azul.jpg" alt="" style="margin:0; padding: 0; width: 100%; height: 41rem; filter: contrast(100%);">  
+            </div>
+            <div class="pt-5 col-6 text-center">
+                <div class="pt-5">
+                    <p class="display-3">Sobre Promarca</p>
+                    <p class="p-4">Como uno de los principales negocios locales al sur de Maracaibo le debemos nuestro buen nombre a la estrecha relacion que tenemos con nuestros clientes. Creemos que todos se merecen el mas alto nivel de servicio y estamos comprometidos con ofrecerles justamente eso. Para saber más, ponte en contacto con nosotros.</p>
+                    <a class="btn btn-info" href="#contact">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+       
+        <!--  servicios  -->
+    <div id="services" class="container align-items-center">
+        <div class="row">
+            <div class="col-4 text-center">
+                <!-- Bootstrap Card-->
+                <div class="card" style="width: 20rem; height: 25rem;">
+                    <img src="http://localhost:3000/Modo-de-vida-cangrejo-azul.jpg" alt="Card One" class="card-img">
+                    <div class="card-body">
+                        <h5 class="pt-3 cad-title">Consulta sobre compras</h5>
+                        <p class="pt-3 pb-3 card-text">
+                            Estamos aquí para servirte
+                        </p>
+                        <a href="#" class="">Read...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 text-center">
+                <!-- Bootstrap Card-->
+                <div class="card" style="width: 20rem; height: 25rem;">
+                    <img src="http://localhost:3000/Modo-de-vida-cangrejo-azul.jpg" alt="Card One" class="card-img">
+                    <div class="card-body" style="background: rgba(100,100,100,.5);">
+                        <h5 class="pt-3 cad-title">Llamada de atención al cliente</h5>
+                        <p class="pt-3 pb-3 card-text">
+                            Servicio de alto nivel
+                        </p>
+                        <a href="#" class="">Read...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 text-center">
+                <!-- Bootstrap Card-->
+                <div class="card" style="width: 20rem; height: 25rem;">
+                    <img src="http://localhost:3000/Modo-de-vida-cangrejo-azul.jpg" alt="Card One" class="card-img">
+                    <div class="card-body">
+                        <h5 class="pt-3 cad-title">Entrega Programada</h5>
+                        <p class="pt-3 pb-3 card-text">
+                            Satisfacción garantizada
+                        </p>
+                        <a href="#" class="">Read...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+       
+        <!--  horario de servicios  -->
+    <div id="time-visit" style="margin: 0; padding: 0; width: 100%; height: 40rem;">
+        <div class=" row p-5">
+            <div class="pt-5 col-6 text-center">
+                <div class="pt-5">
+                    <p class="display-4">Horario de servicio</p>
+                    <p class="pt-5 h5">Horario de servicio</p>
+                    <p class="p-5">Lunes - Viernes: 9 a.m. - 4 a.m.</p>
+                </div>
+            </div>
+            <div class="col-6">
+                <img src="http://localhost:3000/Modo-de-vida-cangrejo-azul.jpg" alt="" style="margin:0; padding: 0; width: 100%; height: 30rem; filter: contrast(100%);">  
+            </div>
+        </div>
+    </div>
+            
+        <!--  contactanos  -->
+    <div id="contact" class="container align-items-center">
+        <div class="text-center row">
+            <div class="col-12">
+                <p class="p-5 h1">Contáctanos</p>
+            </div>
+            <div class=" col-12">
+                <input type="text" name="" id="" placeholder="Nombre">
+            </div>
+            <div class="pt-3 col-12">
+                <input type="email" name="" id="" placeholder="Email">
+            </div>
+            <div class="pt-3 col-12">
+                <input type="text" name="" id="" placeholder="Asunto">
+            </div>
+            <div class="pt-3 pb-5 col-12">
+                <textarea name="" id="" placeholder="Escribe tu mensaje aquí..."></textarea>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-info">Donaciones</button>
+            </div>
+            <div class="col-12">
+                <p class="p-3 h5">¡Gracias por tu mensaje!</p>
+            </div>
+        </div>
+    </div>
+
+   
+  
+    <%- include('./partials/footer.ejs')-%>
+
+</body>
+</html>

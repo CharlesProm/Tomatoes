@@ -1,0 +1,40 @@
+<ion-header no-border>
+  <ion-toolbar>
+    <ion-title>Pelicula: {{movie.title}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+
+    <ion-card *ngFor="let commentary of commentaryes">
+      <ion-card-content>
+        <ion-label>
+          <h3>{{commentary.name}} {{commentary.lastname}}</h3>
+        </ion-label>
+        <h4>{{commentary.descrip}}</h4>
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
+</ion-content>
+
+<ion-footer>
+  <ion-item>
+    <ion-label  position="floating">Commentary</ion-label>
+    <ion-input type="text" name="commentary" [(ngModel)]="commentary" autocomplete="off"></ion-input>
+  </ion-item>
+  <div class="row">
+    <div class="col">
+      <ion-button (click)="cancel()" color="danger" expand="full">
+        Cancelar
+      </ion-button>
+    </div>
+    <div class="col">
+      <ion-button (click)="addCommentary()" color="primary" expand="full">
+        Enviar comentario
+      </ion-button>
+    </div>
+  </div>
+  
+</ion-footer>
